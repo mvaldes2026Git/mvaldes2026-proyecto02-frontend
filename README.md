@@ -1,38 +1,40 @@
 # Proyecto 01 - Frontend
 
-# Cabañas SurVal — Portafolio de Corretaje de Propiedades Accesible
+# Cabañas SurVal — Portafolio de Corretaje Accesible e Intercultural
 
-Este repositorio contiene el prototipo e interfaz web del sistema **Cabañas SurVal**, desarrollado como evaluación **P2 (Presentación Oral / Interface Portafolio)** para la asignatura **Desarrollo de Frontend (ICINF1107)** en la Universidad Católica de Temuco.
+Este repositorio contiene la interfaz web del sistema **Cabañas SurVal**, desarrollada como evaluación **P2 (Presentación Oral / Portafolio Individual)** para la asignatura **Desarrollo de Frontend (ICINF1107)** en la Universidad Católica de Temuco.
 
 ---
 
-## 🎯 1. Definición de Audiencia y Propósito (Criterio A)
+## 🎯 1. Definición de Audiencia y Propósito Territorial (Criterio A)
 
 ### Audiencia Objetivo
-1. **Turistas y Clientes de Arriendo:** Personas que buscan alquilar una cabaña en el sur de Chile de manera rápida, clara y sin barreras de accesibilidad.
-2. **Propietarios de Cabañas:** Dueños de inmuebles que requieren una plataforma profesional para promocionar sus propiedades y gestionar reservas.
-3. **Lectores con Discapacidad Visual o Motora:** Usuarios que navegan mediante lectores de pantalla (NVDA, JAWS) o exclusivamente a través del teclado.
+1. **Población Local y Hablantes de Mapudungun:** Residentes de la Región de La Araucanía que requieren una plataforma respetuosa con la cultura e idioma local.
+2. **Turistas Internacionales (Hablantes de Inglés):** Visitantes extranjeros que necesitan información clara y accesible sobre arriendos en la zona.
+3. **Usuarios con Discapacidad Visual o Motora:** Personas que navegan con lectores de pantalla (NVDA, JAWS) o mediante teclado.
 
 ### Necesidades Identificadas
-* Visualizar las características clave de cada propiedad (capacidad, precio, ubicación, equipamiento).
-* Contar con descripciones textuales detalladas y transcripciones para archivos multimedia (video).
-* Un formulario de contacto claro y de fácil llenado en dispositivos móviles y de escritorio.
+* Consultar disponibilidad de cabañas en su idioma nativo o de uso frecuente.
+* Transcripciones textuales en múltiples idiomas para material audiovisual.
+* Interfaz sin barreras de accesibilidad digital y adaptada a dispositivos móviles.
 
 ---
 
-## 🏗️ 2. Arquitectura del Proyecto y Estructura Semántica (Criterio B1 y B4)
+## 🏗️ 2. Arquitectura del Proyecto (Criterio B1 y B4)
 
-El proyecto respeta el principio de **Cero Sopa de Divs**, utilizando únicamente etiquetas semánticas de HTML5 para garantizar un árbol accesible (*Accessibility Tree*) limpio.
+El proyecto cumple estrictamente con el principio de **Cero Sopa de Divs**, estructurado con etiquetas semánticas puras de HTML5.
 
 ```text
 mvaldes2026-proyecto02-frontend/
 ├── assets/
 │   ├── css/
-│   │   └── style.css          # Estilos CSS externos y media queries
+│   │   └── style.css          # Hojas de estilo externas y puntos de quiebre
 │   ├── js/
-│   │   └── main.js           # Archivo JS para futuras expansiones
-│   ├── img/                  # Imágenes con textos alternativos optimizados
-│   └── video/                # Recursos multimedia con subtítulos/transcripción
-├── index.html                # Documento HTML5 semántico sin DIVs
-├── uso_ia.md                 # Documentación del uso ético y estructurado de IA
-└── README.md                 # Documentación general de la entrega
+│   │   └── main.js           # Lógica JavaScript
+│   ├── img/                  # Imágenes con textos alternativos detallados
+│   └── video/                # Recursos multimedia con subtítulos e inclusión auditiva
+├── index.html                # Documento semántico trilingüe (Español, Mapudungun, Inglés)
+├── uso_ia.md                 # Bitácora sobre la asistencia de IA
+└── README.md                 # Documentación técnica del proyecto# Cabañas SurVal — Portafolio de Corretaje Accesible e Intercultural
+
+Este repositorio contiene la interfaz web del sistema **Cabañas SurVal**, desarrollada como evaluación **P2 (Presentación Oral / Portafolio Individual)** para la asignatura **Desarrollo de Frontend (ICINF1107)** en la Universidad Católica de Temuco.
