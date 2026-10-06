@@ -1,4 +1,4 @@
-# Proyecto 01 - Frontend
+# Proyecto 02 - Frontend
 
 # Cabañas SurVal — Portafolio de Corretaje Accesible e Intercultural
 
