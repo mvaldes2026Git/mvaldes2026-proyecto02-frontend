@@ -1,11 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-CL">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio web y plataforma de corretaje de cabañas. Interfaz accesible, dinámica y responsiva para alquiler y venta de propiedades.">
+  <title>Corretaje de Cabañas SurVal | Portafolio Accesible</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+
+  <!-- Enlace directo para lectores de pantalla / navegación por teclado -->
+  <a href="#contenido-principal" class="sr-only">Saltar al contenido principal</a>
+
+  <!-- ENCABEZADO PRINCIPAL -->
+  <header role="banner">
+    <figure>
+      <figcaption class="sr-only">Logotipo de Cabañas SurVal</figcaption>
+      <h1 id="titulo-sitio">Cabañas SurVal — Corretaje & Gestión Inmobiliaria</h1>
+    </figure>
     
+    <nav aria-label="Navegación principal del sitio" role="navigation">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo de Cabañas</a></li>
+        <li><a href="#servicios">Servicios de Corretaje</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="contenido-principal" role="main">
+
+    <!-- SECCIÓN 1: INICIO Y PRESENTACIÓN -->
+    <section id="inicio" aria-labelledby="titulo-inicio">
+      <h2 id="titulo-inicio">Bienvenido a Cabañas SurVal</h2>
+      <p>
+        Somos una agencia especializada en la difusión, alquiler y venta de cabañas turísticas y propiedades en la zona sur de Chile. Ofrecemos una plataforma accesible, transparente y ágil tanto para propietarios como para visitantes.
+      </p>
+      
+      <!-- Video / Recorrido virtual accesible -->
+      <figure aria-labelledby="desc-video-promocional">
+        <video controls poster="assets/img/cabana-destacada.jpg" aria-describedby="transcripcion-video">
+          <source src="assets/video/recorrido-cabanas.mp4" type="video/mp4">
+          <track kind="captions" src="assets/video/subtitulos.vtt" srclang="es" label="Español" default>
+          Tu navegador no soporta el reproductor de video HTML5.
+        </video>
+        <figcaption id="desc-video-promocional">
+          Video promocional: Recorrido auditivo y visual por nuestras cabañas en stock.
+        </figcaption>
+      </figure>
+
+      <!-- Transcripción accesible para personas con discapacidad visual o auditiva -->
+      <details id="transcripcion-video">
+        <summary>Ver transcripción textual detallada del video (Accesibilidad)</summary>
+        <p>
+          El video muestra una cabaña de madera rústica ubicada junto a un bosque y un lago. Cuenta con terraza amplia, ventanales termopanel, calefacción a leña y capacidad para 6 personas. Entorno silencioso con acceso pavimentado.
+        </p>
+      </details>
+    </section>
+
+    <!-- SECCIÓN 2: CATÁLOGO DE CABAÑAS EN STOCK -->
+    <section id="catalogo" aria-labelledby="titulo-catalogo">
+      <h2 id="titulo-catalogo">Catálogo de Cabañas en Stock</h2>
+      <p>Explora nuestras propiedades disponibles. Cada ficha cuenta con descripción textual accesible.</p>
+
+      <!-- Cabaña 1 -->
+      <article aria-labelledby="cabana-1-titulo">
+        <header>
+          <h3 id="cabana-1-titulo">Cabaña Ensenada del Lago</h3>
+          <p><strong>Ubicación:</strong> Lago Villarrica | <strong>Capacidad:</strong> 6 Personas</p>
+        </header>
+
+        <figure>
+          <img src="assets/img/cabana-lago.jpg" alt="Cabaña de madera de dos pisos con vista frontal al lago y terraza equipada">
+          <figcaption>Vista exterior de Cabaña Ensenada del Lago.</figcaption>
+        </figure>
+
+        <p>Cuenta con 3 dormitorios, 2 baños, acceso privado a la playa y estufa a combustión lenta.</p>
+
+        <footer>
+          <p><strong>Precio por noche:</strong> $85.000 CLP</p>
+          <a href="#contacto" aria-label="Solicitar reserva o información sobre Cabaña Ensenada del Lago">Consultar disponibilidad</a>
+        </footer>
+      </article>
+
+      <!-- Cabaña 2 -->
+      <article aria-labelledby="cabana-2-titulo">
+        <header>
+          <h3 id="cabana-2-titulo">Cabaña Refugio del Bosque</h3>
+          <p><strong>Ubicación:</strong> Curacautín | <strong>Capacidad:</strong> 4 Personas</p>
+        </header>
+
+        <figure>
+          <img src="assets/img/cabana-bosque.jpg" alt="Cabaña rústica rodeada de araucarias y entorno natural verde con tinaja de agua caliente exterior">
+          <figcaption>Vista de Cabaña Refugio del Bosque con tinaja al aire libre.</figcaption>
+        </figure>
+
+        <p>Ubicada en entorno nativo protegido, incluye tinaja caliente de uso exclusivo y parrilla.</p>
+
+        <footer>
+          <p><strong>Precio por noche:</strong> $70.000 CLP</p>
+          <a href="#contacto" aria-label="Solicitar reserva o información sobre Cabaña Refugio del Bosque">Consultar disponibilidad</a>
+        </footer>
+      </article>
+    </section>
+
+    <!-- SECCIÓN 3: SERVICIOS DE CORRETAJE (SOBRE NOSOTROS / TRABAJOS) -->
+    <section id="servicios" aria-labelledby="titulo-servicios">
+      <h2 id="titulo-servicios">Servicios de Corretaje e Integración Web</h2>
+      <p>Desarrollamos soluciones digitales para que los dueños de propiedades puedan administrar sus reservas de manera sencilla y eficiente.</p>
+      
+      <ul>
+        <li>
+          <strong>Publicación de Cabañas:</strong> Creación de fichas técnicas con fotografías optimizadas y textos accesibles.
+        </li>
+        <li>
+          <strong>Gestión de Consultas:</strong> Canalización de clientes interesados directamente a tu correo o teléfono.
+        </li>
+        <li>
+          <strong>Diseño Web Inclusivo:</strong> Sitios compatibles con lectores de pantalla (NVDA, JAWS) y dispositivos móviles.
+        </li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN 4: FORMULARIO DE CONTACTO -->
+    <section id="contacto" aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto">Contacto y Solicitud de Información</h2>
+      <p>Envíanos tus dudas o cotizaciones sobre arriendos y publicación de propiedades. Responderemos en un plazo máximo de 24 horas.</p>
+
+      <form action="#" method="post" aria-label="Formulario de contacto de corretaje">
+        <fieldset>
+          <legend>Información de Contacto</legend>
+
+          <p>
+            <label for="nombre">Nombre completo <span aria-hidden="true">*</span>:</label>
+            <input type="text" id="nombre" name="nombre" required aria-required="true" autocomplete="name">
+          </p>
+
+          <p>
+            <label for="correo">Correo electrónico <span aria-hidden="true">*</span>:</label>
+            <input type="email" id="correo" name="correo" required aria-required="true" autocomplete="email">
+          </p>
+
+          <p>
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="tel" id="telefono" name="telefono" autocomplete="tel">
+          </p>
+
+          <p>
+            <label for="interes">Motivo de consulta <span aria-hidden="true">*</span>:</label>
+            <select id="interes" name="interes" required aria-required="true">
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="reserva">Quiero reservar una cabaña</option>
+              <option value="publicar">Quiero publicar mi cabaña con ustedes</option>
+              <option value="otro">Otra consulta</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="mensaje">Mensaje o detalles adicionales <span aria-hidden="true">*</span>:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required aria-required="true"></textarea>
+          </p>
+
+          <button type="submit" aria-label="Enviar formulario de contacto">Enviar Mensaje</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <role-footer role="contentinfo">
+    <footer id="pie-pagina">
+      <address>
+        <p><strong>Cabañas SurVal — Corretaje Inmobiliario</strong></p>
+        <p>Atención al cliente: <a href="mailto:contacto@cabanas-surval.cl">contacto@cabanas-surval.cl</a></p>
+        <p>Temuco, Región de La Araucanía, Chile</p>
+      </address>
+      <p><small>&copy; 2026 Mauricio Valdés — Proyecto de Desarrollo Frontend (ICINF1107 - UC Temuco).</small></p>
+    </footer>
+  </role-footer>
+
 </body>
 </html>
