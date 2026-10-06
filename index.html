@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html lang="es-CL">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio web y plataforma de corretaje de cabañas. Interfaz accesible, dinámica y responsiva para alquiler y venta de propiedades.">
-  <title>Corretaje de Cabañas SurVal | Portafolio Accesible</title>
+  <meta name="description" content="Portafolio web y plataforma accesible de corretaje de cabañas en La Araucanía. Disponible en Español, Mapudungun e Inglés.">
+  <title>Cabañas SurVal | Corretaje Accesible e Intercultural</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-  <!-- Enlace directo para lectores de pantalla / navegación por teclado -->
+  <!-- Enlace de salto rápido para accesibilidad de teclado -->
   <a href="#contenido-principal" class="sr-only">Saltar al contenido principal</a>
 
   <!-- ENCABEZADO PRINCIPAL -->
   <header role="banner">
     <figure>
       <figcaption class="sr-only">Logotipo de Cabañas SurVal</figcaption>
-      <h1 id="titulo-sitio">Cabañas SurVal — Corretaje & Gestión Inmobiliaria</h1>
+      <h1 id="titulo-sitio">Cabañas SurVal — Corretaje Intercultural</h1>
     </figure>
     
+    <!-- Selección de Idioma (Accesibilidad Lingüística WCAG) -->
+    <nav aria-label="Selección de idioma / Language / Dungun" role="navigation">
+      <ul>
+        <li><a href="#inicio" lang="es" hreflang="es" aria-current="page">Español</a></li>
+        <li><a href="#inicio" lang="arn" hreflang="arn">Mapudungun</a></li>
+        <li><a href="#inicio" lang="en" hreflang="en">English</a></li>
+      </ul>
+    </nav>
+
+    <!-- Navegación Principal -->
     <nav aria-label="Navegación principal del sitio" role="navigation">
       <ul>
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#catalogo">Catálogo de Cabañas</a></li>
-        <li><a href="#servicios">Servicios de Corretaje</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#servicios">Servicios</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -34,30 +42,53 @@
   <!-- CONTENIDO PRINCIPAL -->
   <main id="contenido-principal" role="main">
 
-    <!-- SECCIÓN 1: INICIO Y PRESENTACIÓN -->
+    <!-- SECCIÓN 1: INICIO Y SALUDO TRILINGÜE -->
     <section id="inicio" aria-labelledby="titulo-inicio">
-      <h2 id="titulo-inicio">Bienvenido a Cabañas SurVal</h2>
-      <p>
-        Somos una agencia especializada en la difusión, alquiler y venta de cabañas turísticas y propiedades en la zona sur de Chile. Ofrecemos una plataforma accesible, transparente y ágil tanto para propietarios como para visitantes.
-      </p>
+      <h2 id="titulo-inicio">Bienvenido a Cabañas SurVal / Küme Akun / Welcome</h2>
       
-      <!-- Video / Recorrido virtual accesible -->
-      <figure aria-labelledby="desc-video-promocional">
-        <video controls poster="assets/img/cabana-destacada.jpg" aria-describedby="transcripcion-video">
+      <!-- Mensaje Trilingüe de Bienvenida -->
+      <p lang="es">
+        Agencia especializada en el arriendo y venta de cabañas en la Región de La Araucanía. Promovemos un servicio accesible, inclusivo y conectado con el territorio.
+      </p>
+      <p lang="arn">
+        <strong>Mari mari pu che.</strong> Tüfati ruka küme meli witran mapu mew. Re küme ruka amuleyiñ kom che gealu.
+      </p>
+      <p lang="en">
+        Specialized agency for cabin rentals and sales in La Araucanía Region. We provide accessible, inclusive, and territory-connected services.
+      </p>
+
+      <!-- Recorrido Virtual y Video Accesible -->
+      <figure aria-labelledby="desc-video">
+        <video controls poster="assets/img/cabana-destacada.jpg" aria-describedby="transcripcion-es">
           <source src="assets/video/recorrido-cabanas.mp4" type="video/mp4">
-          <track kind="captions" src="assets/video/subtitulos.vtt" srclang="es" label="Español" default>
+          <track kind="captions" src="assets/video/subtitulos-es.vtt" srclang="es" label="Español" default>
+          <track kind="captions" src="assets/video/subtitulos-en.vtt" srclang="en" label="English">
           Tu navegador no soporta el reproductor de video HTML5.
         </video>
-        <figcaption id="desc-video-promocional">
-          Video promocional: Recorrido auditivo y visual por nuestras cabañas en stock.
+        <figcaption id="desc-video">
+          Recorrido auditivo y visual por nuestras cabañas disponibles.
         </figcaption>
       </figure>
 
-      <!-- Transcripción accesible para personas con discapacidad visual o auditiva -->
-      <details id="transcripcion-video">
-        <summary>Ver transcripción textual detallada del video (Accesibilidad)</summary>
+      <!-- Transcripciones Multi-idioma para Lectores de Pantalla -->
+      <details id="transcripcion-es">
+        <summary lang="es">Ver transcripción textual en Español</summary>
         <p>
-          El video muestra una cabaña de madera rústica ubicada junto a un bosque y un lago. Cuenta con terraza amplia, ventanales termopanel, calefacción a leña y capacidad para 6 personas. Entorno silencioso con acceso pavimentado.
+          Cabaña de madera rústica junto a bosque nativo y vista al lago. Equipada con terraza, ventanales termopanel, calefacción a leña y capacidad para 6 personas.
+        </p>
+      </details>
+
+      <details id="transcripcion-arn">
+        <summary lang="arn">Dungun dungu: Transcripción en Mapudungun</summary>
+        <p lang="arn">
+          Küme ruka mamüll mew deumañmangeyei. Niey mawida, lafken witrun, küme kütral, kay kay meli che müleyiñ.
+        </p>
+      </details>
+
+      <details id="transcripcion-en">
+        <summary lang="en">Read text transcript in English</summary>
+        <p lang="en">
+          Rustic wooden cabin next to native forest with lake view. Equipped with deck, double-pane windows, wood stove, and capacity for 6 guests.
         </p>
       </details>
     </section>
@@ -65,8 +96,7 @@
     <!-- SECCIÓN 2: CATÁLOGO DE CABAÑAS EN STOCK -->
     <section id="catalogo" aria-labelledby="titulo-catalogo">
       <h2 id="titulo-catalogo">Catálogo de Cabañas en Stock</h2>
-      <p>Explora nuestras propiedades disponibles. Cada ficha cuenta con descripción textual accesible.</p>
-
+      
       <!-- Cabaña 1 -->
       <article aria-labelledby="cabana-1-titulo">
         <header>
@@ -79,93 +109,86 @@
           <figcaption>Vista exterior de Cabaña Ensenada del Lago.</figcaption>
         </figure>
 
-        <p>Cuenta con 3 dormitorios, 2 baños, acceso privado a la playa y estufa a combustión lenta.</p>
+        <p lang="es">3 dormitorios, 2 baños, acceso privado a la playa y estufa a combustión lenta.</p>
+        <p lang="en"><small>English: 3 bedrooms, 2 bathrooms, private beach access, wood burning stove.</small></p>
 
         <footer>
-          <p><strong>Precio por noche:</strong> $85.000 CLP</p>
-          <a href="#contacto" aria-label="Solicitar reserva o información sobre Cabaña Ensenada del Lago">Consultar disponibilidad</a>
+          <p><strong>Precio / Value:</strong> $85.000 CLP / night</p>
+          <a href="#contacto" aria-label="Consultar disponibilidad para Cabaña Ensenada del Lago">Consultar disponibilidad</a>
         </footer>
       </article>
 
       <!-- Cabaña 2 -->
       <article aria-labelledby="cabana-2-titulo">
         <header>
-          <h3 id="cabana-2-titulo">Cabaña Refugio del Bosque</h3>
+          <h3 id="cabana-2-titulo">Cabaña Refugio del Bosque (Mawida Ruka)</h3>
           <p><strong>Ubicación:</strong> Curacautín | <strong>Capacidad:</strong> 4 Personas</p>
         </header>
 
         <figure>
-          <img src="assets/img/cabana-bosque.jpg" alt="Cabaña rústica rodeada de araucarias y entorno natural verde con tinaja de agua caliente exterior">
+          <img src="assets/img/cabana-bosque.jpg" alt="Cabaña rústica rodeada de araucarias y entorno natural verde con tinaja exterior">
           <figcaption>Vista de Cabaña Refugio del Bosque con tinaja al aire libre.</figcaption>
         </figure>
 
-        <p>Ubicada en entorno nativo protegido, incluye tinaja caliente de uso exclusivo y parrilla.</p>
+        <p lang="es">Entorno de araucarias nativas, tinaja de agua caliente privada y parrilla.</p>
+        <p lang="en"><small>English: Surrounded by native monkey puzzle trees, private hot tub, and barbecue grill.</small></p>
 
         <footer>
-          <p><strong>Precio por noche:</strong> $70.000 CLP</p>
-          <a href="#contacto" aria-label="Solicitar reserva o información sobre Cabaña Refugio del Bosque">Consultar disponibilidad</a>
+          <p><strong>Precio / Value:</strong> $70.000 CLP / night</p>
+          <a href="#contacto" aria-label="Consultar disponibilidad para Cabaña Refugio del Bosque">Consultar disponibilidad</a>
         </footer>
       </article>
     </section>
 
-    <!-- SECCIÓN 3: SERVICIOS DE CORRETAJE (SOBRE NOSOTROS / TRABAJOS) -->
+    <!-- SECCIÓN 3: SERVICIOS Y PERTINENCIA LOCAL -->
     <section id="servicios" aria-labelledby="titulo-servicios">
-      <h2 id="titulo-servicios">Servicios de Corretaje e Integración Web</h2>
-      <p>Desarrollamos soluciones digitales para que los dueños de propiedades puedan administrar sus reservas de manera sencilla y eficiente.</p>
-      
+      <h2 id="titulo-servicios">Servicios de Corretaje e Inclusión Territorial</h2>
       <ul>
         <li>
-          <strong>Publicación de Cabañas:</strong> Creación de fichas técnicas con fotografías optimizadas y textos accesibles.
+          <strong>Difusión Intercultural:</strong> Publicación de propiedades con pertinencia territorial e información trilingüe (Español, Mapudungun, Inglés).
         </li>
         <li>
-          <strong>Gestión de Consultas:</strong> Canalización de clientes interesados directamente a tu correo o teléfono.
+          <strong>Diseño Universal y Accesible:</strong> Interfaces validadas para navegación por teclado y lectores de pantalla (NVDA, JAWS, VoiceOver).
         </li>
         <li>
-          <strong>Diseño Web Inclusivo:</strong> Sitios compatibles con lectores de pantalla (NVDA, JAWS) y dispositivos móviles.
+          <strong>Gestión Directa:</strong> Canalización de consultas turísticas de origen nacional e internacional.
         </li>
       </ul>
     </section>
 
     <!-- SECCIÓN 4: FORMULARIO DE CONTACTO -->
     <section id="contacto" aria-labelledby="titulo-contacto">
-      <h2 id="titulo-contacto">Contacto y Solicitud de Información</h2>
-      <p>Envíanos tus dudas o cotizaciones sobre arriendos y publicación de propiedades. Responderemos en un plazo máximo de 24 horas.</p>
+      <h2 id="titulo-contacto">Contacto / Contact Form / Ramtun</h2>
 
       <form action="#" method="post" aria-label="Formulario de contacto de corretaje">
         <fieldset>
-          <legend>Información de Contacto</legend>
+          <legend>Datos de Consulta / Contact Information</legend>
 
           <p>
-            <label for="nombre">Nombre completo <span aria-hidden="true">*</span>:</label>
+            <label for="nombre">Nombre completo / Full name <span aria-hidden="true">*</span>:</label>
             <input type="text" id="nombre" name="nombre" required aria-required="true" autocomplete="name">
           </p>
 
           <p>
-            <label for="correo">Correo electrónico <span aria-hidden="true">*</span>:</label>
+            <label for="correo">Correo electrónico / Email <span aria-hidden="true">*</span>:</label>
             <input type="email" id="correo" name="correo" required aria-required="true" autocomplete="email">
           </p>
 
           <p>
-            <label for="telefono">Teléfono de contacto:</label>
-            <input type="tel" id="telefono" name="telefono" autocomplete="tel">
-          </p>
-
-          <p>
-            <label for="interes">Motivo de consulta <span aria-hidden="true">*</span>:</label>
-            <select id="interes" name="interes" required aria-required="true">
-              <option value="" disabled selected>Selecciona una opción</option>
-              <option value="reserva">Quiero reservar una cabaña</option>
-              <option value="publicar">Quiero publicar mi cabaña con ustedes</option>
-              <option value="otro">Otra consulta</option>
+            <label for="idioma-pref">Idioma de preferencia / Preferred Language:</label>
+            <select id="idioma-pref" name="idioma-pref">
+              <option value="es" selected>Español</option>
+              <option value="arn">Mapudungun</option>
+              <option value="en">English</option>
             </select>
           </p>
 
           <p>
-            <label for="mensaje">Mensaje o detalles adicionales <span aria-hidden="true">*</span>:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required aria-required="true"></textarea>
+            <label for="mensaje">Mensaje o consulta / Message <span aria-hidden="true">*</span>:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required aria-required="true"></textarea>
           </p>
 
-          <button type="submit" aria-label="Enviar formulario de contacto">Enviar Mensaje</button>
+          <button type="submit" aria-label="Enviar formulario de contacto">Enviar Mensaje / Send</button>
         </fieldset>
       </form>
     </section>
@@ -173,16 +196,14 @@
   </main>
 
   <!-- PIE DE PÁGINA -->
-  <role-footer role="contentinfo">
-    <footer id="pie-pagina">
-      <address>
-        <p><strong>Cabañas SurVal — Corretaje Inmobiliario</strong></p>
-        <p>Atención al cliente: <a href="mailto:contacto@cabanas-surval.cl">contacto@cabanas-surval.cl</a></p>
-        <p>Temuco, Región de La Araucanía, Chile</p>
-      </address>
-      <p><small>&copy; 2026 Mauricio Valdés — Proyecto de Desarrollo Frontend (ICINF1107 - UC Temuco).</small></p>
-    </footer>
-  </role-footer>
+  <footer id="pie-pagina" role="contentinfo">
+    <address>
+      <p><strong>Cabañas SurVal — Corretaje Inmobiliario Intercultural</strong></p>
+      <p>Temuco, Región de La Araucanía, Chile</p>
+      <p>Contacto: <a href="mailto:contacto@cabanas-surval.cl">contacto@cabanas-surval.cl</a></p>
+    </address>
+    <p><small>&copy; 2026 Mauricio Valdés — ICINF1107 Desarrollo de Frontend (UC Temuco).</small></p>
+  </footer>
 
 </body>
 </html>
