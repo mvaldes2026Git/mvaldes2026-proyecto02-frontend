@@ -156,42 +156,53 @@
       </ul>
     </section>
 
-    <!-- SECCIÓN 4: FORMULARIO DE CONTACTO -->
-    <section id="contacto" aria-labelledby="titulo-contacto">
-      <h2 id="titulo-contacto">Contacto / Contact Form / Ramtun</h2>
+<!-- SECCIÓN 4: FORMULARIO DE CONTACTO Y COTIZACIÓN -->
+<section id="contacto" aria-labelledby="titulo-contacto">
+  <h2 id="titulo-contacto">Contacto y Cotización / Contact Form / Ramtun</h2>
 
-      <form action="#" method="post" aria-label="Formulario de contacto de corretaje">
-        <fieldset>
-          <legend>Datos de Consulta / Contact Information</legend>
+  <form action="#" method="post" aria-label="Formulario de contacto de corretaje">
+    <fieldset>
+      <legend>Datos de Consulta y Selección de Cabaña</legend>
 
-          <p>
-            <label for="nombre">Nombre completo / Full name <span aria-hidden="true">*</span>:</label>
-            <input type="text" id="nombre" name="nombre" required aria-required="true" autocomplete="name">
-          </p>
+      <p>
+        <label for="nombre">Nombre completo / Full name <span aria-hidden="true">*</span>:</label>
+        <input type="text" id="nombre" name="nombre" required aria-required="true" autocomplete="name">
+      </p>
 
-          <p>
-            <label for="correo">Correo electrónico / Email <span aria-hidden="true">*</span>:</label>
-            <input type="email" id="correo" name="correo" required aria-required="true" autocomplete="email">
-          </p>
+      <p>
+        <label for="correo">Correo electrónico / Email <span aria-hidden="true">*</span>:</label>
+        <!-- Cambiado id="correo" a id="email" para coincidir con script.js -->
+        <input type="email" id="email" name="correo" required aria-required="true" autocomplete="email">
+      </p>
 
-          <p>
-            <label for="idioma-pref">Idioma de preferencia / Preferred Language:</label>
-            <select id="idioma-pref" name="idioma-pref">
-              <option value="es" selected>Español</option>
-              <option value="arn">Mapudungun</option>
-              <option value="en">English</option>
-            </select>
-          </p>
+      <p>
+        <label for="cabana">Seleccione Cabaña a consultar / Select Cabin:</label>
+        <!-- Agregado select id="cabana" para que el cotizador dinámico de JS funcione -->
+        <select id="cabana" name="cabana">
+          <option value="" selected>-- Seleccione una opción --</option>
+          <option value="villarrica">Cabaña Enseñada del Lago (Villarrica)</option>
+          <option value="curacautin">Cabaña Refugio del Bosque (Curacautín)</option>
+        </select>
+      </p>
 
-          <p>
-            <label for="mensaje">Mensaje o consulta / Message <span aria-hidden="true">*</span>:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required aria-required="true"></textarea>
-          </p>
+      <p>
+        <label for="idioma-pref">Idioma de preferencia / Preferred Language:</label>
+        <select id="idioma-pref" name="idioma-pref">
+          <option value="es" selected>Español</option>
+          <option value="arn">Mapudungun</option>
+          <option value="en">English</option>
+        </select>
+      </p>
 
-          <button type="submit" aria-label="Enviar formulario de contacto">Enviar Mensaje / Send</button>
-        </fieldset>
-      </form>
-    </section>
+      <p>
+        <label for="mensaje">Mensaje o consulta / Message <span aria-hidden="true">*</span>:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required aria-required="true"></textarea>
+      </p>
+
+      <button type="submit" aria-label="Enviar formulario de contacto">Enviar Mensaje / Send</button>
+    </fieldset>
+  </form>
+</section>
 
   </main>
 
