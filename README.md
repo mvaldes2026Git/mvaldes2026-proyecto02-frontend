@@ -31,7 +31,7 @@ mvaldes2026-proyecto02-frontend/
 │   ├── styles/
 │   │   └── style.css          # Estilos globales y breakpoints responsivos
 │   ├── script/
-│   │   └── main.js            # Cotizador dinámico y validación accesible
+│   │   └── script.js            # Cotizador dinámico y validación accesible
 │   ├── img/                   # Recursos gráficos e imágenes descriptivas
 │   └── video/                 # Recorrido en video de las instalaciones
 ├── index.html                 # Documento HTML principal accesible
