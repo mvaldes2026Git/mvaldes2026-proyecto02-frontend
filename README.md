@@ -1,40 +1,39 @@
-# Proyecto 02 - Frontend
+# 🏔️ Cabañas Surval — Turismo Accesible e Intercultural
 
-# Cabañas SurVal — Portafolio de Corretaje Accesible e Intercultural
-
-Este repositorio contiene la interfaz web del sistema **Cabañas SurVal**, desarrollada como evaluación **P2 (Presentación Oral / Portafolio Individual)** para la asignatura **Desarrollo de Frontend (ICINF1107)** en la Universidad Católica de Temuco.
+Plataforma web de difusión y reserva para **Cabañas Surval**, orientada al turismo accesible e intercultural en la Región de La Araucanía, Chile. Proyecto desarrollado para la asignatura de **Desarrollo de Frontend (ICINF1107)** en la **Universidad Católica de Temuco**.
 
 ---
 
-## 🎯 1. Definición de Audiencia y Propósito Territorial (Criterio A)
+## 🌟 Características Principales
 
-### Audiencia Objetivo
-1. **Población Local y Hablantes de Mapudungun:** Residentes de la Región de La Araucanía que requieren una plataforma respetuosa con la cultura e idioma local.
-2. **Turistas Internacionales (Hablantes de Inglés):** Visitantes extranjeros que necesitan información clara y accesible sobre arriendos en la zona.
-3. **Usuarios con Discapacidad Visual o Motora:** Personas que navegan con lectores de pantalla (NVDA, JAWS) o mediante teclado.
-
-### Necesidades Identificadas
-* Consultar disponibilidad de cabañas en su idioma nativo o de uso frecuente.
-* Transcripciones textuales en múltiples idiomas para material audiovisual.
-* Interfaz sin barreras de accesibilidad digital y adaptada a dispositivos móviles.
+* **Estructura Semántica Pura (HTML5):** Uso riguroso de etiquetas semánticas (`header`, `nav`, `main`, `section`, `article`, `footer`) sin uso superfluo de contenedores genéricos.
+* **Accesibilidad Web (WCAG 2.1 - Niveles A y AA):**
+  * Navegación completa mediante teclado (indicadores visuales con `:focus-visible` de alto contraste).
+  * Regiones WAI-ARIA y compatibilidad con lectores de pantalla (NVDA, VoiceOver, Narrador).
+  * Enlace de salto rápido (`.sr-only`) para saltar directamente al contenido principal.
+  * Inclusión lingüística intercultural (Español / Mapudungun).
+* **Diseño Responsivo con Identidad Territorial (CSS3):**
+  * Paleta cromática inspirada en la naturaleza sureña (Verde Araucaria `#1B4D3E`, Azul Lago `#1E5B70`, Madera Roble `#8B5A2B`).
+  * **3 Breakpoints Responsivos:** Adaptación fluida para Móvil (<768px), Tablet (≥768px) y Escritorio (≥1024px).
+* **Multimedia Accesible:**
+  * Reproductor `<video>` integrado con atributo `poster`, subtítulos `<track>` y transcripción textual completa en un componente colapsable `<details>`.
+* **Interactividad Dinámica (JavaScript):**
+  * **Cotizador Dinámico:** Cálculo en tiempo real de tarifas estimadas en pesos chilenos (`CLP`) según la cabaña seleccionada.
+  * **Validación Accesible de Formulario:** Notificación interactiva de errores en vivo (`aria-invalid="true"`, `role="alert"`) e integración de un modal de confirmación (*Chaltumay*).
 
 ---
 
-## 🏗️ 2. Arquitectura del Proyecto (Criterio B1 y B4)
-
-El proyecto cumple estrictamente con el principio de **Cero Sopa de Divs**, estructurado con etiquetas semánticas puras de HTML5.
+## 📁 Estructura del Proyecto
 
 ```text
 mvaldes2026-proyecto02-frontend/
 ├── assets/
-│   ├── css/
-│   │   └── style.css          # Hojas de estilo externas y puntos de quiebre
-│   ├── js/
-│   │   └── main.js           # Lógica JavaScript
-│   ├── img/                  # Imágenes con textos alternativos detallados
-│   └── video/                # Recursos multimedia con subtítulos e inclusión auditiva
-├── index.html                # Documento semántico trilingüe (Español, Mapudungun, Inglés)
-├── uso_ia.md                 # Bitácora sobre la asistencia de IA
-└── README.md                 # Documentación técnica del proyecto# Cabañas SurVal — Portafolio de Corretaje Accesible e Intercultural
-
-Este repositorio contiene la interfaz web del sistema **Cabañas SurVal**, desarrollada como evaluación **P2 (Presentación Oral / Portafolio Individual)** para la asignatura **Desarrollo de Frontend (ICINF1107)** en la Universidad Católica de Temuco.
+│   ├── styles/
+│   │   └── style.css          # Estilos globales y breakpoints responsivos
+│   ├── script/
+│   │   └── main.js            # Cotizador dinámico y validación accesible
+│   ├── img/                   # Recursos gráficos e imágenes descriptivas
+│   └── video/                 # Recorrido en video de las instalaciones
+├── index.html                 # Documento HTML principal accesible
+├── uso_ia.md                  # Declaración de uso de IA generativa y prompts
+└── README.md                  # Documentación del proyecto
